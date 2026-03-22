@@ -24,7 +24,47 @@
   margin-top: 50px;
 }
 
-.btn-primary, .btn-success {
+.servicio-card:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+
+.servicio-card:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.servicio-card:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+
+.servicio-card:nth-of-type(4) {
+  animation-delay: 2s;
+}
+
+.servicio-card:nth-of-type(5) {
+  animation-delay: 2.5s;
+}
+
+.servicio-card:nth-of-type(6) {
+  animation-delay: 3s;
+}
+
+.servicio-card:nth-of-type(7) {
+  animation-delay: 3.5s;
+}
+
+.servicio-card:nth-of-type(8) {
+  animation-delay: 4s;
+}
+
+.servicio-card:nth-of-type(9) {
+  animation-delay: 4.5s;
+}
+
+.servicio-card:nth-of-type(10) {
+  animation-delay: 5s;
+}
+
+.btn-primary {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -35,11 +75,12 @@
   color: white;
   font-weight: 500;
 }
-.btn-primary:hover, .btn-success:hover {
+.btn-primary:hover {
   background-color: #18C083;
   transform: scale(1.05);
 }
-.btn-primary:focus, .btn-success:focus, .btn-primary:active, .btn-success:active {
+.btn-primary:focus, .btn-primary:active {
+  background-color: #27825E;
   box-shadow: none;
 }
 
@@ -59,6 +100,7 @@
   transform: scale(1.05);
 }
 .btn-secondary:focus, .btn-secondary:active {
+  background-color: #0C291A;
   box-shadow: none;
 }
 
@@ -78,20 +120,31 @@
   transform: scale(1.05);
 }
 .btn-accent:focus, .btn-accent:active {
+  background-color: #18C083;
   box-shadow: none;
 }
 
 img, a, button, article {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-base, .card-profesional, .servicios-grid article {
+.card-base, .card-profesional, .servicios-grid article, .servicio-card {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   background-color: #F4FBF8;
   color: #0C291A;
@@ -159,7 +212,7 @@ nav a {
   text-align: center;
   padding: 120px 20px;
   background-color: linear-gradient(to bottom, #E9F6F1, #F4FBF8);
-  background: url(../img/noktistudio.jpeg);
+  background: linear-gradient(to bottom, rgba(233, 246, 241, 0.1), rgba(244, 251, 248, 0.4)), url(../img/noktistudio.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,15 +269,15 @@ nav:hover::after {
 }
 
 .servicio-card {
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 30px;
+  animation: fadeUp 0.6s ease;
 }
 
 .servicio-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
 }
 
 .servicios-grid article,
@@ -270,7 +323,7 @@ h1, h2, h3 {
 }
 
 .galeria-item:hover img {
-  transform: scale(1.08);
+  transform: scale(1.08) rotate(1deg);
 }
 
 img {
@@ -322,10 +375,6 @@ img {
 .card h4 {
   margin-top: 15px;
   font-size: 1.4rem;
-}
-
-.btn.btn-primary, .btn.btn-success {
-  background-color: #27825E !important;
 }
 
 .btn-success:hover {

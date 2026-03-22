@@ -3,66 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Nokti Studio</title>
+    <title>Reservar Turno | Nokti Studio Buenos Aires</title>
+    <meta name="description" content="Reservá tu turno en Nokti Studio. Servicios de uñas en Buenos Aires: esmaltado semipermanente, capping, soft gel y belleza de pies. Elegí tu horario fácil y rápido.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nokti Studio | Turnos</title>
 </head>
 
 <body>
-    <header class="py-4">
-        <div class="container text-center">
 
-            <!-- LOGO -->
-            <img src="../img/logoNK.png" alt="Logo NK Studio" class="img-fluid mb-3 logo">
+<header class="py-4">
+    <div class="container text-center">
+        <img src="../img/logoNK.png" alt="Logo Nokti Studio" class="img-fluid logo mb-3">
 
-            <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg">
-                
-                <!-- BOTÓN HAMBURGUESA -->
-                <button class="navbar-toggler mx-auto"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menuNokti"
-                    aria-controls="menuNokti"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                    <!-- MENÚ -->
-                <div class="collapse navbar-collapse justify-content-center" id="menuNokti">
-                
-                    <ul class="navbar-nav text-center">
-                    
-                        <li class="nav-item">
-                          <a class="nav-link custom-link" href="index.html">Home</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                          <a class="nav-link custom-link" href="pages/servicios.html">Servicios</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                          <a class="nav-link custom-link" href="pages/nosotras.html">Nosotras</a>
-                        </li>
-                    
-                    </ul>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNokti">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menuNokti">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link custom-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="nosotras.html">Nosotras</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container py-5">
+
+        <h1 class="mb-3">Reservá tu turno</h1>
+        <p class="text-muted mb-5">
+            Elegí el servicio, completá tus datos y asegurá tu lugar en Nokti Studio 💅
+        </p>
+
+        <div class="card p-4 shadow-sm servicio-card">
+
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" placeholder="Ej: María Pérez" required>
                 </div>
-            </nav>
+
+                <div class="mb-3">
+                    <label class="form-label">Teléfono / WhatsApp</label>
+                    <input type="tel" class="form-control" placeholder="Ej: 11 1234 5678" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Servicio</label>
+                    <select class="form-select" required>
+                        <option selected disabled>Seleccionar servicio</option>
+                        <option>Esmaltado semipermanente</option>
+                        <option>Capping</option>
+                        <option>Soft Gel</option>
+                        <option>Uñas esculpidas</option>
+                        <option>Belleza de pies</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Hora</label>
+                    <input type="time" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Notas (opcional)</label>
+                    <textarea class="form-control" rows="3" placeholder="Ej: diseño, color, etc."></textarea>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Reservar turno</button>
+                </div>
+
+            </form>
+
         </div>
-    </header>
 
-    <main class="container py-5">
+    </section>
+</main>
 
-        <h1 class="text-center mb-5">Servicios</h1>
+<footer class="footer">
+    <div class="container-footer">
+        <p>© 2025 Nokti Studio — Todos los derechos reservados</p>
+        <p>Diseño web by D. Andrea💜</p>
+    </div>
+</footer>
 
-        <!-- contenido acá -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    </main>
-
-    <!-- FOOTER (copiar el mismo footer) -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
