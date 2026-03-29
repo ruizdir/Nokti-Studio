@@ -1,9 +1,7 @@
 🌐 Nokti Studio
-
 Sitio web desarrollado como proyecto práctico, enfocado en la creación de una experiencia moderna, visualmente atractiva y optimizada para el usuario.
 
 ✨ Descripción
-
 Este proyecto consiste en una página web para Nokti Studio, que incluye secciones informativas, una página de reservas (booking) con formulario y mejoras visuales mediante animaciones en CSS.
 
 El objetivo es ofrecer una navegación clara, estética y funcional, aplicando buenas prácticas de desarrollo web.
@@ -30,5 +28,4 @@ index.html → página principal
 👉 https://ruizdir.github.io/Nokti-Studio/
 
 📌 Autor
-
-Proyecto desarrollado por Dirlyz Ruiz ✨
+Proyecto desarrollado como parte de la formacion en Coder House, por Dirlyz Ruiz✨
