@@ -11,7 +11,7 @@ El objetivo es ofrecer una navegación clara, estética y funcional, aplicando b
 - 🎨 Animaciones y transiciones con CSS
 - 📱 Diseño adaptable (responsive)
 - ⚡ Optimización básica SEO
-- 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 - HTML5
 - CSS3
 - SCSS
